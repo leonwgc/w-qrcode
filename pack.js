@@ -14,11 +14,6 @@ pack(!isBuild, {
     publicPath: '',
   },
   devServer: {
-    port: 9200,
-  },
-  resolve: {
-    alias: {
-      'w-touch': path.resolve(__dirname, './src'),
-    },
+    port: 9102,
   },
 });
