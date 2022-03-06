@@ -1,7 +1,7 @@
 {
   "name": "w-qrcode",
-  "version": "1.0.3",
-  "description": "桌面和移动端手势库 desktop & mobile gesture lib",
+  "version": "1.0.0",
+  "description": "js二维码",
   "keywords": [
     "qrcode",
     "js",
