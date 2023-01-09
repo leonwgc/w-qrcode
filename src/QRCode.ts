@@ -944,8 +944,8 @@ function _isSupportCanvas() {
 
 // android 2.x doesn't support Data-URI spec
 function _getAndroid() {
-  var android: boolean | number = false;
-  var sAgent = navigator.userAgent;
+  var android: any = false;
+  var sAgent = typeof window !== 'undefined' && navigator.userAgent;
 
   if (/android/i.test(sAgent)) {
     // android
@@ -1266,7 +1266,8 @@ DrawingCanvas.prototype.round = function (nNumber) {
 
 //#endregion DrawingCanvas
 
-var useSVG = document.documentElement.tagName.toLowerCase() === 'svg';
+var useSVG =
+  typeof window !== 'undefined' && document.documentElement.tagName.toLowerCase() === 'svg';
 
 // Drawing in DOM by using Table tag
 var Drawing = useSVG ? svgDrawer : !_isSupportCanvas() ? DrawingSvg : DrawingCanvas;

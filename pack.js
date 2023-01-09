@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { default: pack } = require('packx');
+const { default: pack } = require('packw');
 const argv = require('yargs').argv;
 const path = require('path');
 
